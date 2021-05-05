@@ -5,13 +5,13 @@ export const Header = () => {
     return (
         <header>
             <div className="container">
-                <div className="inner-content">
-                    <div className="brand">
-                        <Link to="/">Watchlist</Link>
+                <div className="content-container">
+                    <div className="logo">
+                        <Link to="/">Movie<span>Library</span></Link>
                     </div>
-                    <ul className="nav-links">
+                    <ul className="links">
                         <li>
-                            <Link to="/">Watchlist</Link>
+                            <Link to="/">My Watchlist</Link>
                         </li>
                         <li>
                             <Link to="/watched">Watched</Link>

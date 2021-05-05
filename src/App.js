@@ -1,9 +1,9 @@
-import React from "react";
-import { BrowserRouter as Router, Switch,Route } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Watchlist } from './components/Watchlist';
 import { Watched } from './components/Watched';
-import { Addlist } from './components/Addlist';
+import { AddMovie } from './components/AddMovie';
 import './App.css';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
           </Route>
 
           <Route exact path="/addlist">
-            <Addlist/>
+            <AddMovie/>
           </Route>
         </Switch>
     </Router>
