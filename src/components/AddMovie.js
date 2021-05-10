@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { ResultCard } from "./ResultCard";
 
-export const AddMovie = () => {
+export const Add = () => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
 
@@ -9,9 +10,7 @@ export const AddMovie = () => {
 
     setQuery(e.target.value);
 
-    fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=3b05444824eda7017c57640089b4e650&language=en-US&page=1&include_adult=false&query=${e.target.value}`
-    )
+    fetch(`https://api.themoviedb.org/3/search/movie?api_key=3b05444824eda7017c57640089b4e650&language=en-US&page=1&include&query=${e.target.value}`)
       .then((res) => res.json())
       .then((data) => {
         if (!data.errors) {
@@ -33,7 +32,9 @@ export const AddMovie = () => {
           {results.length > 0 && (
             <ul className="movie-results">
               {results.map((movie) => (
-                <li>{movie.title}</li>
+                <li key={movie.id}>
+                  <ResultCard movie={movie} />
+                </li>
               ))}
             </ul>
           )}
