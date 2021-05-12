@@ -219,3 +219,8 @@ header .links li {
   font-size: 3rem;
   text-align: center;
 }
+.movie-page .no-movies p{
+  color: #c4c4c4;
+  font-size: 2rem;
+  text-align: center;
+}

@@ -20,14 +20,14 @@ export default (state, action) => {
         ),
         watched: [action.payload, ...state.watched],
       };
-    case "ADD_MOVIE_TO_FAVORITES":
-      return {
-        ...state,
-        watchlist: state.watchlist.filter(
-          (movie) => movie.id !== action.payload.id
-        ),
-        favorites: [action.payload, ...state.favorites],
-      };
+      case "ADD_MOVIE_TO_FAVORITES":
+        return {
+          ...state,
+          watchlist: state.watchlist.filter(
+            (movie) => movie.id !== action.payload.id
+          ),
+          favorites: [action.payload, ...state.favorites],
+        };
       case "MOVE_TO_WATCHLIST":
         return {
           ...state,

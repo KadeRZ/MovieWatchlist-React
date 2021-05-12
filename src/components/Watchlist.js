@@ -19,7 +19,7 @@ export const Watchlist = () => {
             ))}
           </div>
         ) : (
-          <h2 className="no-movies">Add movies to your watchlist</h2>
+          <h2 className="no-movies">Add movies to your watchlist <br/> <p>Search for movies using the Search Movies button</p></h2>
         )}
       </div>
     </div>

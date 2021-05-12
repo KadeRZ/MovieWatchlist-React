@@ -20,7 +20,7 @@ export const ResultCard = ({ movie }) => {
 
   const watchedDisabled = storedMovieWatched ? true : false;
 
-  const favoritesDisabled = storedFavorites ? true : storedMovieWatched ? true : false;
+  const favoritesDisabled = storedFavorites ? true : false;
 
   return (
     <div className="result-card">

@@ -18,13 +18,13 @@ export const Header = () => {
             <li>
               <Link to="/watched">Watched</Link>
             </li>
-
-            <li>
-              <Link to="/add" className="btn">Add Movies</Link>
-            </li>
             <li>
               <Link to="/favorites">Favorites</Link>
             </li>
+            <li>
+              <Link to="/add" className="btn">Search Movies</Link>
+            </li>
+
           </ul>
         </div>
       </div>
